@@ -1,0 +1,28 @@
+<div class="container">
+	<div class="row">
+  	<div class="col-md-4">
+    	<div class="panel panel-primary">
+      	<div class="panel-heading">Long Url</div>
+      	<div class="panel-body"><%= @url.long_url %></div>
+    	</div>
+    	<div class="panel panel-primary">
+      	<div class="panel-heading">Domain</div>
+      	<div class="panel-body"><%= @url.domain %></div>
+    	</div>
+    	<div class="panel panel-primary">
+      	<div class="panel-heading">Short Url</div>
+      	<div class="panel-body"><%= @url.short_url %></div>
+    	</div>
+      <div class="panel panel-primary">
+        <div class="panel-heading">Hit Count</div>
+        <div class="panel-body"><%= @url.count %></div>
+      </div>
+		</div>
+	</div>
+  <a href="http://0.0.0.0:3000/urls/home" class="w3-button w3-indigo w3-border w3-hover-indigo"><h1>Try Again</h1></a>
+
+  <p> Today's total conversions
+  <% @conversion = Conversion.find_by(date: Date.today) %> 
+  <%= "#{@conversion.count}" %>
+  </p>
+</div>
