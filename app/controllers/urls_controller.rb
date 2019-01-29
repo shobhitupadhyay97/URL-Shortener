@@ -6,7 +6,11 @@ class UrlsController < ApplicationController
 	end
 
 	def search_result
-				@url = Url.search(params[:url][:keyword])
+		if params[:url][:keyword].nil?
+			@urls = []
+		else
+			@urls = Url.search params[:url][:keyword]
+		end
 	end
 
 	def show
@@ -15,8 +19,6 @@ class UrlsController < ApplicationController
 
 	def show_long_url
 		#@url = Url.find_by(short_url: params[:url][:short_url])
-		#Rails.cache.clear
-		#puts params
 		@url = Rails.cache.fetch(params[:url][:short_url], expires_in: 15.minutes) do 
 					Url.where(short_url: params[:url][:short_url]).first
     end

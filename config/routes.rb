@@ -17,7 +17,7 @@ Rails.application.routes.draw do
   get 'users/home'
   get 'urls/home'
   get 'urls/search'
-  get 'urls/search_result'
+  post 'urls/search_result'
   resources :users  
   resources :sessions
   resources :urls

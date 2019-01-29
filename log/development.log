@@ -17989,3 +17989,425 @@ Processing by UrlsController#show as HTML
 Completed 200 OK in 61ms (Views: 56.4ms | ActiveRecord: 1.0ms)
 
 
+  [1m[36mUrl Load (0.5ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" ORDER BY "urls"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
+  [1m[36mUrl Load (0.4ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" ORDER BY "urls"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
+Started GET "/urls/search" for 127.0.0.1 at 2019-01-29 13:07:59 +0530
+Processing by UrlsController#search as HTML
+  Rendering urls/search.html.erb within layouts/application
+  Rendered urls/search.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/shobhit/project1/app/views/urls/search.html.erb:8: syntax error, unexpected keyword_class, expecting ')'
+ext_field :q, params[:q] class: 'form-control' );@output_buf
+                              ^):
+  
+app/views/urls/search.html.erb:8: syntax error, unexpected keyword_class, expecting ')'
+Started GET "/urls/search" for 127.0.0.1 at 2019-01-29 13:08:36 +0530
+Processing by UrlsController#search as HTML
+  Rendering urls/search.html.erb within layouts/application
+  Rendered urls/search.html.erb within layouts/application (2.8ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 3, expected 1..2)):
+     5:   <div class="col-md-6 col-md-offset-3">
+     6:     <%= form_for(:url, url: urls_search_result_path) do |f| %>
+     7:       <%= f.label :keyword %>
+     8:       <%= f.text_field :q, params[:q], class: 'form-control' %>
+     9: 
+    10:       <%= f.submit "Search", class: "btn btn-primary" %>
+    11:     <% end %>
+  
+app/views/urls/search.html.erb:8:in `block in _app_views_urls_search_html_erb__646184624093631432_70172918059420'
+app/views/urls/search.html.erb:6:in `_app_views_urls_search_html_erb__646184624093631432_70172918059420'
+Started GET "/urls/search" for 127.0.0.1 at 2019-01-29 13:09:11 +0530
+Processing by UrlsController#search as HTML
+  Rendering urls/search.html.erb within layouts/application
+  Rendered urls/search.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered layouts/_header.html.erb (36.1ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 116ms (Views: 105.5ms | ActiveRecord: 8.2ms)
+
+
+Started POST "/urls/search_result" for 127.0.0.1 at 2019-01-29 13:09:17 +0530
+  
+ActionController::RoutingError (No route matches [POST] "/urls/search_result"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/urls/search_result" for 127.0.0.1 at 2019-01-29 13:09:59 +0530
+Processing by UrlsController#search_result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eEVgjxLowbreVz8zrDOMfV6IIZC0nv6XK+nwIs5prOqCIWYumwNgJ4QK+HdhOb8G6YXF5OIXQySoLnvdEAf9dw==", "url"=>{"q"=>"goo"}, "commit"=>"Search"}
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 2.1ms)
+
+
+  
+NameError (undefined local variable or method `params' for #<Class:0x00007fa4d52d2f90>):
+  
+app/models/url.rb:56:in `search'
+app/controllers/urls_controller.rb:12:in `search_result'
+Started POST "/urls/search_result" for 127.0.0.1 at 2019-01-29 13:11:41 +0530
+Processing by UrlsController#search_result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eEVgjxLowbreVz8zrDOMfV6IIZC0nv6XK+nwIs5prOqCIWYumwNgJ4QK+HdhOb8G6YXF5OIXQySoLnvdEAf9dw==", "url"=>{"q"=>"goo"}, "commit"=>"Search"}
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 2.2ms)
+
+
+  
+NameError (undefined local variable or method `short_url' for #<Class:0x00007fa4d2f790a8>):
+  
+app/models/url.rb:56:in `search'
+app/controllers/urls_controller.rb:12:in `search_result'
+Started GET "/urls/search" for 127.0.0.1 at 2019-01-29 13:38:39 +0530
+Processing by UrlsController#search as HTML
+  Rendering urls/search.html.erb within layouts/application
+  Rendered urls/search.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered layouts/_header.html.erb (19.9ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 72ms (Views: 61.8ms | ActiveRecord: 7.0ms)
+
+
+Started POST "/urls/search_result" for 127.0.0.1 at 2019-01-29 13:38:43 +0530
+Processing by UrlsController#search_result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6+vgH1/G41m7yJSNOvl9a0naUyTlptlmg6fOxD+F2X4Rj+a+1i1CxOGVU8n3804Q/te3ULMvZNUAYEU74euI4w==", "url"=>{"keyword"=>"goo"}, "commit"=>"Search"}
+  Rendering urls/search_result.html.erb within layouts/application
+  Rendered urls/search_result.html.erb within layouts/application (4.3ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     8: 
+     9:  </tr>
+    10: </thead>
+    11:  <% @urls.each do |t| %>
+    12: <thread>
+    13:  <tr>
+    14:    <td><%=t[:long_url]%></td>
+  
+app/views/urls/search_result.html.erb:11:in `_app_views_urls_search_result_html_erb___4548799185876726587_70172963919140'
+Started POST "/urls/search_result" for 127.0.0.1 at 2019-01-29 13:39:30 +0530
+Processing by UrlsController#search_result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6+vgH1/G41m7yJSNOvl9a0naUyTlptlmg6fOxD+F2X4Rj+a+1i1CxOGVU8n3804Q/te3ULMvZNUAYEU74euI4w==", "url"=>{"keyword"=>"goo"}, "commit"=>"Search"}
+  Rendering urls/search_result.html.erb within layouts/application
+  Rendered urls/search_result.html.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     8: 
+     9:  </tr>
+    10: </thead>
+    11:  <% @urls.each do |t| %>
+    12: <thread>
+    13:  <tr>
+    14:    <td><%=t[:long_url]%></td>
+  
+app/views/urls/search_result.html.erb:11:in `_app_views_urls_search_result_html_erb___4548799185876726587_70172955495420'
+Started POST "/urls/search_result" for 127.0.0.1 at 2019-01-29 13:39:48 +0530
+Processing by UrlsController#search_result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6+vgH1/G41m7yJSNOvl9a0naUyTlptlmg6fOxD+F2X4Rj+a+1i1CxOGVU8n3804Q/te3ULMvZNUAYEU74euI4w==", "url"=>{"keyword"=>"goo"}, "commit"=>"Search"}
+  Rendering urls/search_result.html.erb within layouts/application
+  Rendered urls/search_result.html.erb within layouts/application (2.7ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     8: 
+     9:  </tr>
+    10: </thead>
+    11:  <% @url.each do |t| %>
+    12: <thread>
+    13:  <tr>
+    14:    <td><%=t[:long_url]%></td>
+  
+app/views/urls/search_result.html.erb:11:in `_app_views_urls_search_result_html_erb___4548799185876726587_70172966870680'
+  [1m[36mUrl Load (0.7ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" ORDER BY "urls"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
+  [1m[36mUrl Load (0.5ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" ORDER BY "urls"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
+  [1m[36mUrl Load (0.6ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" ORDER BY "urls"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
+Started POST "/urls/search_result" for 127.0.0.1 at 2019-01-29 13:44:55 +0530
+Processing by UrlsController#search_result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6+vgH1/G41m7yJSNOvl9a0naUyTlptlmg6fOxD+F2X4Rj+a+1i1CxOGVU8n3804Q/te3ULMvZNUAYEU74euI4w==", "url"=>{"keyword"=>"goo"}, "commit"=>"Search"}
+  Rendering urls/search_result.html.erb within layouts/application
+  Rendered urls/search_result.html.erb within layouts/application (3.9ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     8: 
+     9:  </tr>
+    10: </thead>
+    11:  <% @url.each do |t| %>
+    12: <thread>
+    13:  <tr>
+    14:    <td><%=t[:long_url]%></td>
+  
+app/views/urls/search_result.html.erb:11:in `_app_views_urls_search_result_html_erb___4548799185876726587_70172917388740'
+Started POST "/urls/search_result" for 127.0.0.1 at 2019-01-29 13:45:19 +0530
+Processing by UrlsController#search_result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6+vgH1/G41m7yJSNOvl9a0naUyTlptlmg6fOxD+F2X4Rj+a+1i1CxOGVU8n3804Q/te3ULMvZNUAYEU74euI4w==", "url"=>{"keyword"=>"goo"}, "commit"=>"Search"}
+  Rendering urls/search_result.html.erb within layouts/application
+  Rendered urls/search_result.html.erb within layouts/application (4.6ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     8: 
+     9:  </tr>
+    10: </thead>
+    11:  <% @urls.each do |t| %>
+    12: <thread>
+    13:  <tr>
+    14:    <td><%=t[:long_url]%></td>
+  
+app/views/urls/search_result.html.erb:11:in `_app_views_urls_search_result_html_erb___4548799185876726587_70172964307580'
+Started POST "/urls/search_result" for 127.0.0.1 at 2019-01-29 13:46:26 +0530
+Processing by UrlsController#search_result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6+vgH1/G41m7yJSNOvl9a0naUyTlptlmg6fOxD+F2X4Rj+a+1i1CxOGVU8n3804Q/te3ULMvZNUAYEU74euI4w==", "url"=>{"keyword"=>"goo"}, "commit"=>"Search"}
+  Rendering urls/search_result.html.erb within layouts/application
+  Rendered urls/search_result.html.erb within layouts/application (2.7ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     8: 
+     9:  </tr>
+    10: </thead>
+    11:  <% @urls.each do |t| %>
+    12: <thread>
+    13:  <tr>
+    14:    <td><%=t[:long_url]%></td>
+  
+app/views/urls/search_result.html.erb:11:in `_app_views_urls_search_result_html_erb___4548799185876726587_70172956038480'
+  [1m[36mUrl Load (0.5ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" ORDER BY "urls"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
+  [1m[36mUrl Load (0.5ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" ORDER BY "urls"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
+  [1m[36mUrl Load (0.8ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" ORDER BY "urls"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
+  [1m[36mUrl Load (0.4ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" ORDER BY "urls"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
+Started POST "/urls/search_result" for 127.0.0.1 at 2019-01-29 14:05:26 +0530
+Processing by UrlsController#search_result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6+vgH1/G41m7yJSNOvl9a0naUyTlptlmg6fOxD+F2X4Rj+a+1i1CxOGVU8n3804Q/te3ULMvZNUAYEU74euI4w==", "url"=>{"keyword"=>"google"}, "commit"=>"Search"}
+  Rendering urls/search_result.html.erb within layouts/application
+  Rendered urls/search_result.html.erb within layouts/application (327.8ms)
+Completed 500 Internal Server Error in 334ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `home_index_path' for #<#<Class:0x00007fa4cfbed928>:0x00007fa4cfbe7ed8>):
+    23: 
+    24: <center><%= link_to "Back",:back %></center>
+    25: 
+    26: <center><%= link_to "Home",home_index_path%></center>
+  
+app/views/urls/search_result.html.erb:26:in `_app_views_urls_search_result_html_erb___4548799185876726587_70172918378720'
+Started POST "/urls/search_result" for 127.0.0.1 at 2019-01-29 14:06:11 +0530
+Processing by UrlsController#search_result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6+vgH1/G41m7yJSNOvl9a0naUyTlptlmg6fOxD+F2X4Rj+a+1i1CxOGVU8n3804Q/te3ULMvZNUAYEU74euI4w==", "url"=>{"keyword"=>"google"}, "commit"=>"Search"}
+  Rendering urls/search_result.html.erb within layouts/application
+  Rendered urls/search_result.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_shim.html.erb (1.5ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered layouts/_header.html.erb (58.6ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 137ms (Views: 119.8ms | ActiveRecord: 15.0ms)
+
+
+Started POST "/urls/search_result" for 127.0.0.1 at 2019-01-29 14:06:27 +0530
+Processing by UrlsController#search_result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6+vgH1/G41m7yJSNOvl9a0naUyTlptlmg6fOxD+F2X4Rj+a+1i1CxOGVU8n3804Q/te3ULMvZNUAYEU74euI4w==", "url"=>{"keyword"=>"google"}, "commit"=>"Search"}
+  Rendering urls/search_result.html.erb within layouts/application
+  Rendered urls/search_result.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered layouts/_header.html.erb (2.3ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 74ms (Views: 70.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/urls/search_result" for 127.0.0.1 at 2019-01-29 14:06:56 +0530
+Processing by UrlsController#search_result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6+vgH1/G41m7yJSNOvl9a0naUyTlptlmg6fOxD+F2X4Rj+a+1i1CxOGVU8n3804Q/te3ULMvZNUAYEU74euI4w==", "url"=>{"keyword"=>"google"}, "commit"=>"Search"}
+  Rendering urls/search_result.html.erb within layouts/application
+  Rendered urls/search_result.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered layouts/_header.html.erb (18.3ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 79ms (Views: 72.6ms | ActiveRecord: 4.4ms)
+
+
+Started POST "/urls/search_result" for 127.0.0.1 at 2019-01-29 14:07:01 +0530
+Processing by UrlsController#search_result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6+vgH1/G41m7yJSNOvl9a0naUyTlptlmg6fOxD+F2X4Rj+a+1i1CxOGVU8n3804Q/te3ULMvZNUAYEU74euI4w==", "url"=>{"keyword"=>"google"}, "commit"=>"Search"}
+  Rendering urls/search_result.html.erb within layouts/application
+  Rendered urls/search_result.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_shim.html.erb (0.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered layouts/_header.html.erb (2.4ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 81ms (Views: 78.7ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/urls/search_result" for 127.0.0.1 at 2019-01-29 14:10:42 +0530
+Processing by UrlsController#search_result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6+vgH1/G41m7yJSNOvl9a0naUyTlptlmg6fOxD+F2X4Rj+a+1i1CxOGVU8n3804Q/te3ULMvZNUAYEU74euI4w==", "url"=>{"keyword"=>"google"}, "commit"=>"Search"}
+  Rendering urls/search_result.html.erb within layouts/application
+  Rendered urls/search_result.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered layouts/_header.html.erb (21.5ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 80ms (Views: 72.6ms | ActiveRecord: 5.5ms)
+
+
+Started POST "/urls/search_result" for 127.0.0.1 at 2019-01-29 14:11:12 +0530
+Processing by UrlsController#search_result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6+vgH1/G41m7yJSNOvl9a0naUyTlptlmg6fOxD+F2X4Rj+a+1i1CxOGVU8n3804Q/te3ULMvZNUAYEU74euI4w==", "url"=>{"keyword"=>"google"}, "commit"=>"Search"}
+  Rendering urls/search_result.html.erb within layouts/application
+  Rendered urls/search_result.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered layouts/_header.html.erb (14.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 88ms (Views: 82.2ms | ActiveRecord: 3.7ms)
+
+
+Started POST "/urls/search_result" for 127.0.0.1 at 2019-01-29 14:11:40 +0530
+Processing by UrlsController#search_result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6+vgH1/G41m7yJSNOvl9a0naUyTlptlmg6fOxD+F2X4Rj+a+1i1CxOGVU8n3804Q/te3ULMvZNUAYEU74euI4w==", "url"=>{"keyword"=>"google"}, "commit"=>"Search"}
+  Rendering urls/search_result.html.erb within layouts/application
+  Rendered urls/search_result.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered layouts/_header.html.erb (24.5ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 75ms (Views: 67.1ms | ActiveRecord: 6.2ms)
+
+
+Started POST "/urls/search_result" for 127.0.0.1 at 2019-01-29 14:12:11 +0530
+Processing by UrlsController#search_result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6+vgH1/G41m7yJSNOvl9a0naUyTlptlmg6fOxD+F2X4Rj+a+1i1CxOGVU8n3804Q/te3ULMvZNUAYEU74euI4w==", "url"=>{"keyword"=>"google"}, "commit"=>"Search"}
+  Rendering urls/search_result.html.erb within layouts/application
+  Rendered urls/search_result.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered layouts/_header.html.erb (21.4ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 73ms (Views: 65.2ms | ActiveRecord: 5.7ms)
+
+
+Started POST "/urls/search_result" for 127.0.0.1 at 2019-01-29 14:13:27 +0530
+Processing by UrlsController#search_result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6+vgH1/G41m7yJSNOvl9a0naUyTlptlmg6fOxD+F2X4Rj+a+1i1CxOGVU8n3804Q/te3ULMvZNUAYEU74euI4w==", "url"=>{"keyword"=>"google"}, "commit"=>"Search"}
+  Rendering urls/search_result.html.erb within layouts/application
+  Rendered urls/search_result.html.erb within layouts/application (9.3ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered layouts/_header.html.erb (14.7ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 102ms (Views: 87.9ms | ActiveRecord: 5.3ms)
+
+
+  [1m[36mUrl Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "urls" LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUrl Load (0.3ms)[0m  [1m[34mSELECT "urls".* FROM "urls"[0m
+Started POST "/urls/search_result" for 127.0.0.1 at 2019-01-29 14:15:44 +0530
+Processing by UrlsController#search_result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6+vgH1/G41m7yJSNOvl9a0naUyTlptlmg6fOxD+F2X4Rj+a+1i1CxOGVU8n3804Q/te3ULMvZNUAYEU74euI4w==", "url"=>{"keyword"=>"google"}, "commit"=>"Search"}
+  Rendering urls/search_result.html.erb within layouts/application
+  Rendered urls/search_result.html.erb within layouts/application (8.4ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered layouts/_header.html.erb (13.0ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 80ms (Views: 68.1ms | ActiveRecord: 5.2ms)
+
+
+Started POST "/urls/search_result" for 127.0.0.1 at 2019-01-29 14:16:04 +0530
+Processing by UrlsController#search_result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6+vgH1/G41m7yJSNOvl9a0naUyTlptlmg6fOxD+F2X4Rj+a+1i1CxOGVU8n3804Q/te3ULMvZNUAYEU74euI4w==", "url"=>{"keyword"=>"google"}, "commit"=>"Search"}
+  Rendering urls/search_result.html.erb within layouts/application
+  Rendered urls/search_result.html.erb within layouts/application (11.5ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 76ms (Views: 73.4ms | ActiveRecord: 0.3ms)
+
+
+  [1m[36mUrl Load (0.9ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (0.9ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (0.4ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (0.4ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (0.9ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (4.8ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (5.7ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (2.6ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  [1m[36mUrl Load (3.2ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (0.7ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (1.7ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (2.0ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (0.5ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (1.1ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (0.9ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
