@@ -18,6 +18,7 @@ Rails.application.routes.draw do
   get 'urls/home'
   get 'urls/search'
   post 'urls/search_result'
+  get 'urls/report'
   resources :users  
   resources :sessions
   resources :urls

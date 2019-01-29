@@ -1,0 +1,16 @@
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Count</th>
+    </tr>
+  </thead>
+  <% @conversions.each do |t| %>
+  <thread>
+    <tr>
+      <td><%= t.date %></td>
+      <td><%=t.count%></td>
+    </tr>
+  <%end%>
+  </thread>
+</table>

@@ -1,9 +1,8 @@
 class HitcountWorker
   include Sidekiq::Worker
-
   def perform(id)
-  	puts id
-  	url = Url.find(id)
+    puts id
+    url = Url.find(id)
     if url.count == nil
       url.update(count: 1)
     else

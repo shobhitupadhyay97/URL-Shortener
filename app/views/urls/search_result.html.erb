@@ -1,22 +1,18 @@
 <table class="table table-bordered">
-   <thead>
-
- <tr>
-   <th>Long Url</th>
-   <th>Short Url</th>
-   <th>Domain</th>
-
- </tr>
-</thead>
- <% @urls.each do |t| %>
-<thread>
- <tr>
-   <td><%= t.long_url %></td>
-   <td><%=t.short_url%></td>
-   <td><%=t.domain%></td>
-
- </tr>
- <%end%>
-</thread>
-
+  <thead>
+    <tr>
+      <th>Long Url</th>
+      <th>Short Url</th>
+      <th>Domain</th>
+    </tr>
+  </thead>
+  <% @urls.each do |t| %>
+  <thread>
+    <tr>
+      <td><%= t.long_url %></td>
+      <td><%=t.short_url%></td>
+      <td><%=t.domain%></td>
+    </tr>
+    <%end%>
+  </thread>
 </table>

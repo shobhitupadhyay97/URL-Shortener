@@ -2,26 +2,26 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 <div class="container">
-	<div class="row">
-  	<div class="col-md-4">
-    	<div class="panel panel-primary">
-      	<div class="panel-heading">Long Url</div>
-      	<div class="panel-body"><%= @url.long_url %></div>
-    	</div>
-    	<div class="panel panel-primary">
-      	<div class="panel-heading">Domain</div>
-      	<div class="panel-body"><%= @url.domain %></div>
-    	</div>
-    	<div class="panel panel-primary">
-      	<div class="panel-heading">Short Url</div>
-      	<div class="panel-body"><%= @url.short_url %></div>
-    	</div>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Long Url</div>
+        <div class="panel-body"><%= @url.long_url %></div>
+      </div>
+      <div class="panel panel-primary">
+        <div class="panel-heading">Domain</div>
+        <div class="panel-body"><%= @url.domain %></div>
+      </div>
+      <div class="panel panel-primary">
+        <div class="panel-heading">Short Url</div>
+        <div class="panel-body"><%= @url.short_url %></div>
+      </div>
       <div class="panel panel-primary">
         <div class="panel-heading">Hit Count</div>
         <div class="panel-body"><%= @url.count %></div>
       </div>
-		</div>
-	</div>
+    </div>
+  </div>
   <h2>
   <a href="http://0.0.0.0:3000/urls/new" class="w3-button w3-black w3-border w3-hover-dark-grey">Get Short URL from Long URL</a>
   <a href="http://0.0.0.0:3000/fetch_long_url" class="w3-button w3-black w3-border w3-hover-dark-grey">Get Long URL from Short URL</a>

@@ -4,6 +4,7 @@
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
     <%= form_for(:url, url: urls_search_result_path) do |f| %>
+    
       <%= f.label :keyword %>
       <%= f.text_field :keyword, class: 'form-control' %>
 
