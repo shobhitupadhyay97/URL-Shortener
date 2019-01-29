@@ -18926,3 +18926,745 @@ Processing by UrlsController#create as HTML
 Completed 200 OK in 110ms (Views: 58.2ms | ActiveRecord: 46.2ms)
 
 
+Started GET "/urls" for 127.0.0.1 at 2019-01-29 15:50:28 +0530
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for UrlsController):
+  
+actionpack (5.2.2) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.2) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.2) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.2) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.6) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.6) lib/rack/etag.rb:25:in `call'
+rack (2.0.6) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.6) lib/rack/head.rb:12:in `call'
+actionpack (5.2.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.6) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.6) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.2) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/urls" for 127.0.0.1 at 2019-01-29 15:50:42 +0530
+Processing by UrlsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wb3THfDViPHvRx++5vHyEghOnEiWNHTSWOCCDaUtc3Y72dW8eT4pbLUa2Por+8Fpv0N4PMC9yWHbJwnye0Mi6w==", "url"=>{"long_url"=>"dnsndfsndf,ms", "domain"=>"anmd nsa"}, "commit"=>"Create Short URL"}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/urls_controller.rb:55
+  [1m[36mUrl Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "urls" WHERE LOWER("urls"."long_url") = LOWER($1) LIMIT $2[0m  [["long_url", "dnsndfsndf,ms"], ["LIMIT", 1]]
+  ↳ app/controllers/urls_controller.rb:55
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/urls_controller.rb:55
+  Rendering urls/new.html.erb within layouts/application
+  Rendered shared/_error_msg.html.erb (1.1ms)
+  Rendered urls/new.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 102ms (Views: 62.3ms | ActiveRecord: 16.3ms)
+
+
+Started POST "/urls" for 127.0.0.1 at 2019-01-29 15:50:59 +0530
+Processing by UrlsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mdnNgrvUEH4CsqUvxE6xxzbMAB6utbQGRk8jVRrxHtZjvcsjMj+x41jvYmsJRIK8gcHkavg8CbXFiKiqxJ9PSw==", "url"=>{"long_url"=>"www.papapsamna.com", "domain"=>"asdansma"}, "commit"=>"Create Short URL"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/urls_controller.rb:55
+  [1m[36mUrl Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "urls" WHERE LOWER("urls"."long_url") = LOWER($1) LIMIT $2[0m  [["long_url", "www.papapsamna.com"], ["LIMIT", 1]]
+  ↳ app/controllers/urls_controller.rb:55
+  [1m[36mUrl Create (0.8ms)[0m  [1m[32mINSERT INTO "urls" ("long_url", "url_digest", "domain", "short_url", "created_at", "updated_at", "count") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["long_url", "www.papapsamna.com"], ["url_digest", "64734b848ec6d5bddda0592257afcadc"], ["domain", "asdansma"], ["short_url", "www.asd.com/64734b"], ["created_at", "2019-01-29 10:20:59.910733"], ["updated_at", "2019-01-29 10:20:59.910733"], ["count", 0]]
+  ↳ app/controllers/urls_controller.rb:55
+  [1m[35m (40.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/urls_controller.rb:55
+Redirected to http://0.0.0.0:3000/urls/21
+Completed 302 Found in 81ms (ActiveRecord: 42.2ms)
+
+
+Started GET "/urls/21" for 127.0.0.1 at 2019-01-29 15:50:59 +0530
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"21"}
+  [1m[36mUrl Load (0.6ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/urls_controller.rb:21
+  Rendering urls/show.html.erb within layouts/application
+  [1m[36mConversion Load (0.7ms)[0m  [1m[34mSELECT  "conversions".* FROM "conversions" WHERE "conversions"."date" = $1 LIMIT $2[0m  [["date", "2019-01-29"], ["LIMIT", 1]]
+  ↳ app/views/urls/show.html.erb:30
+  Rendered urls/show.html.erb within layouts/application (35.6ms)
+  [1m[36mConversion Load (0.4ms)[0m  [1m[34mSELECT  "conversions".* FROM "conversions" WHERE "conversions"."date" = $1 LIMIT $2[0m  [["date", "2019-01-29"], ["LIMIT", 1]]
+  ↳ app/workers/counter_worker.rb:6
+  [1m[36mCACHE Conversion Load (0.0ms)[0m  [1m[34mSELECT  "conversions".* FROM "conversions" WHERE "conversions"."date" = $1 LIMIT $2[0m  [["date", "2019-01-29"], ["LIMIT", 1]]
+  ↳ app/workers/counter_worker.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/workers/counter_worker.rb:12
+  [1m[36mConversion Update (3.5ms)[0m  [1m[33mUPDATE "conversions" SET "count" = $1, "updated_at" = $2 WHERE "conversions"."id" = $3[0m  [["count", 5], ["updated_at", "2019-01-29 10:21:00.077142"], ["id", 2]]
+  ↳ app/workers/counter_worker.rb:12
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/workers/counter_worker.rb:12
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 120ms (Views: 95.6ms | ActiveRecord: 18.8ms)
+
+
+Started GET "/urls" for 127.0.0.1 at 2019-01-29 15:51:06 +0530
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for UrlsController):
+  
+actionpack (5.2.2) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.2) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.2) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.2) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.6) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.6) lib/rack/etag.rb:25:in `call'
+rack (2.0.6) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.6) lib/rack/head.rb:12:in `call'
+actionpack (5.2.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.6) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.6) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.2) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-01-29 15:56:21 +0530
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 67ms (Views: 65.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login/" for 127.0.0.1 at 2019-01-29 15:56:24 +0530
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_shim.html.erb (0.8ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered layouts/_header.html.erb (24.3ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 109ms (Views: 102.0ms | ActiveRecord: 4.6ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2019-01-29 15:56:28 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kAKR6C9B0IoZU+gexO179znWkKBxmmYtth5/SAVxFH21l1+6fKPqz7i8GGCLa3hVHun7UKr9t/JbEW+7JmSL2A==", "session"=>{"email"=>"sanchit@mail.comm", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "sanchit@mail.comm"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:28
+  [1m[36mUser Update (0.4ms)[0m  [1m[33mUPDATE "users" SET "remember_digest" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["remember_digest", "$2a$10$sfUPH3Yzu7ADyPjapDokje2AZXkLqJ791XhLrBoBwbs3QVThIgrYW"], ["updated_at", "2019-01-29 10:26:28.760601"], ["id", 3]]
+  ↳ app/models/user.rb:28
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:28
+Completed 500 Internal Server Error in 359ms (ActiveRecord: 2.6ms)
+
+
+  
+NameError (undefined local variable or method `urls_home_path' for #<SessionsController:0x00007fa4d28be948>
+Did you mean?  urls_search_path):
+  
+app/controllers/sessions_controller.rb:11:in `create'
+Started POST "/login" for 127.0.0.1 at 2019-01-29 15:57:55 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kAKR6C9B0IoZU+gexO179znWkKBxmmYtth5/SAVxFH21l1+6fKPqz7i8GGCLa3hVHun7UKr9t/JbEW+7JmSL2A==", "session"=>{"email"=>"sanchit@mail.comm", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "sanchit@mail.comm"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:28
+  [1m[36mUser Update (0.4ms)[0m  [1m[33mUPDATE "users" SET "remember_digest" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["remember_digest", "$2a$10$eE3CIPWW5yII5PFSLapKieaRq7gT.DjUochyJnA452zQOUXg8PNc2"], ["updated_at", "2019-01-29 10:27:55.629709"], ["id", 3]]
+  ↳ app/models/user.rb:28
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:28
+Completed 500 Internal Server Error in 400ms (ActiveRecord: 7.2ms)
+
+
+  
+NameError (undefined local variable or method `urls_home_path' for #<SessionsController:0x00007fa4d46e7b18>
+Did you mean?  urls_search_path):
+  
+app/controllers/sessions_controller.rb:11:in `create'
+Started POST "/login" for 127.0.0.1 at 2019-01-29 15:58:00 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kAKR6C9B0IoZU+gexO179znWkKBxmmYtth5/SAVxFH21l1+6fKPqz7i8GGCLa3hVHun7UKr9t/JbEW+7JmSL2A==", "session"=>{"email"=>"sanchit@mail.comm", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "sanchit@mail.comm"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:28
+  [1m[36mUser Update (0.4ms)[0m  [1m[33mUPDATE "users" SET "remember_digest" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["remember_digest", "$2a$10$QZlxZQiYOUPk492HQLtwreaZ37tvvPM54.VYA29VXMeKAHZfKE5mi"], ["updated_at", "2019-01-29 10:28:00.640982"], ["id", 3]]
+  ↳ app/models/user.rb:28
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:28
+Completed 500 Internal Server Error in 328ms (ActiveRecord: 2.4ms)
+
+
+  
+NameError (undefined local variable or method `urls_home_path' for #<SessionsController:0x00007fa4cf63c088>
+Did you mean?  urls_search_path):
+  
+app/controllers/sessions_controller.rb:11:in `create'
+Started POST "/login" for 127.0.0.1 at 2019-01-29 15:58:20 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kAKR6C9B0IoZU+gexO179znWkKBxmmYtth5/SAVxFH21l1+6fKPqz7i8GGCLa3hVHun7UKr9t/JbEW+7JmSL2A==", "session"=>{"email"=>"sanchit@mail.comm", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "sanchit@mail.comm"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:28
+  [1m[36mUser Update (0.4ms)[0m  [1m[33mUPDATE "users" SET "remember_digest" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["remember_digest", "$2a$10$awjRLPhHggWzo3NvjSSkHOHMa.jTFHp/Vk3I0T52GCikjoDfaPyh."], ["updated_at", "2019-01-29 10:28:20.592812"], ["id", 3]]
+  ↳ app/models/user.rb:28
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:28
+Completed 500 Internal Server Error in 338ms (ActiveRecord: 7.1ms)
+
+
+  
+NameError (undefined local variable or method `urls_home_path' for #<SessionsController:0x00007fa4cf5d2250>
+Did you mean?  urls_search_path):
+  
+app/controllers/sessions_controller.rb:11:in `create'
+Started GET "/login/" for 127.0.0.1 at 2019-01-29 15:58:24 +0530
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_shim.html.erb (0.9ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered layouts/_header.html.erb (5.9ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 75ms (Views: 71.2ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2019-01-29 15:58:27 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4yYmO+F2S+K7yBwDCuC4ug/GPgtZxK8+ya65MbrEjgTGs+hpspRxpxon7H1FZrsYKPlV+4KjfuEkoanCmdERoQ==", "session"=>{"email"=>"sanchit@mail.comm", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "sanchit@mail.comm"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:28
+  [1m[36mUser Update (0.4ms)[0m  [1m[33mUPDATE "users" SET "remember_digest" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["remember_digest", "$2a$10$riwHCm4wdtcZPxHHsehTbuO36jFaiZCVfZ50tuPMxagqMPlWTJH8u"], ["updated_at", "2019-01-29 10:28:27.155353"], ["id", 3]]
+  ↳ app/models/user.rb:28
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:28
+Completed 500 Internal Server Error in 389ms (ActiveRecord: 2.3ms)
+
+
+  
+NameError (undefined local variable or method `urls_home_path' for #<SessionsController:0x00007fa4d5211868>
+Did you mean?  urls_search_path):
+  
+app/controllers/sessions_controller.rb:11:in `create'
+Started GET "/" for 127.0.0.1 at 2019-01-29 15:58:40 +0530
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 56ms (Views: 52.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login/" for 127.0.0.1 at 2019-01-29 15:58:42 +0530
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (7.2ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered layouts/_header.html.erb (3.0ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 76ms (Views: 70.8ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2019-01-29 15:58:45 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Pv48hRlq5POtjwL6qz+oCq//FOVJ1Pg9F/9T7TkidIIba/LXSojetgxg8oTkuauoiMB/FZKzKeL68EMeGjfrJw==", "session"=>{"email"=>"sanchit@mail.comm", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "sanchit@mail.comm"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:39
+  [1m[36mUser Update (0.5ms)[0m  [1m[33mUPDATE "users" SET "remember_digest" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["remember_digest", nil], ["updated_at", "2019-01-29 10:28:45.453849"], ["id", 3]]
+  ↳ app/models/user.rb:39
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:39
+Completed 500 Internal Server Error in 278ms (ActiveRecord: 2.4ms)
+
+
+  
+NameError (undefined local variable or method `urls_home_path' for #<SessionsController:0x00007fa4d29060b8>
+Did you mean?  urls_search_path):
+  
+app/controllers/sessions_controller.rb:11:in `create'
+Started POST "/login" for 127.0.0.1 at 2019-01-29 15:59:14 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Pv48hRlq5POtjwL6qz+oCq//FOVJ1Pg9F/9T7TkidIIba/LXSojetgxg8oTkuauoiMB/FZKzKeL68EMeGjfrJw==", "session"=>{"email"=>"sanchit@mail.comm", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "sanchit@mail.comm"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:39
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:39
+Redirected to http://localhost:3000/urls
+Completed 302 Found in 108ms (ActiveRecord: 4.4ms)
+
+
+Started GET "/urls" for 127.0.0.1 at 2019-01-29 15:59:14 +0530
+Processing by UrlsController#index as HTML
+  Rendering urls/index.html.erb within layouts/application
+  Rendered urls/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered layouts/_header.html.erb (3.5ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 66ms (Views: 63.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-29 15:59:22 +0530
+Processing by UsersController#index as HTML
+Redirected to http://localhost:3000/urls
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/urls" for 127.0.0.1 at 2019-01-29 15:59:22 +0530
+Processing by UrlsController#index as HTML
+  Rendering urls/index.html.erb within layouts/application
+  Rendered urls/index.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered layouts/_header.html.erb (2.2ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 62ms (Views: 57.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-29 15:59:23 +0530
+Processing by UsersController#index as HTML
+Redirected to http://localhost:3000/urls
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/urls" for 127.0.0.1 at 2019-01-29 15:59:23 +0530
+Processing by UrlsController#index as HTML
+  Rendering urls/index.html.erb within layouts/application
+  Rendered urls/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered layouts/_header.html.erb (3.4ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 71ms (Views: 67.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-29 16:00:55 +0530
+Processing by UsersController#index as HTML
+Redirected to http://localhost:3000/urls
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/urls" for 127.0.0.1 at 2019-01-29 16:00:55 +0530
+Processing by UrlsController#index as HTML
+  Rendering urls/index.html.erb within layouts/application
+  Rendered urls/index.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered layouts/_header.html.erb (4.2ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 84ms (Views: 80.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2019-01-29 16:01:10 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/search"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/urls" for 127.0.0.1 at 2019-01-29 16:01:18 +0530
+Processing by UrlsController#index as HTML
+  Rendering urls/index.html.erb within layouts/application
+  Rendered urls/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered layouts/_header.html.erb (4.0ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 103ms (Views: 99.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/urls/report" for 127.0.0.1 at 2019-01-29 16:01:20 +0530
+Processing by UrlsController#report as HTML
+  Rendering urls/report.html.erb within layouts/application
+  [1m[36mConversion Load (1.0ms)[0m  [1m[34mSELECT "conversions".* FROM "conversions"[0m
+  ↳ app/views/urls/report.html.erb:8
+  Rendered urls/report.html.erb within layouts/application (11.2ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered layouts/_header.html.erb (3.1ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 84ms (Views: 58.5ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/urls/search" for 127.0.0.1 at 2019-01-29 16:01:22 +0530
+Processing by UrlsController#search as HTML
+  Rendering urls/search.html.erb within layouts/application
+  Rendered urls/search.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered layouts/_header.html.erb (2.1ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 57ms (Views: 52.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-29 16:01:29 +0530
+Processing by UsersController#index as HTML
+Redirected to http://localhost:3000/urls
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/urls" for 127.0.0.1 at 2019-01-29 16:01:29 +0530
+Processing by UrlsController#index as HTML
+  Rendering urls/index.html.erb within layouts/application
+  Rendered urls/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered layouts/_header.html.erb (2.3ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 51ms (Views: 48.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2019-01-29 16:01:31 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/search"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/urls" for 127.0.0.1 at 2019-01-29 16:01:33 +0530
+Processing by UrlsController#index as HTML
+  Rendering urls/index.html.erb within layouts/application
+  Rendered urls/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered layouts/_header.html.erb (6.3ms)
+  Rendered layouts/_footer.html.erb (1.3ms)
+Completed 200 OK in 65ms (Views: 61.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2019-01-29 16:01:35 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/search"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/urls" for 127.0.0.1 at 2019-01-29 16:01:39 +0530
+Processing by UrlsController#index as HTML
+  Rendering urls/index.html.erb within layouts/application
+  Rendered urls/index.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered layouts/_header.html.erb (4.2ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 70ms (Views: 66.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/urls" for 127.0.0.1 at 2019-01-29 16:01:40 +0530
+Processing by UrlsController#index as HTML
+  Rendering urls/index.html.erb within layouts/application
+  Rendered urls/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered layouts/_header.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 54ms (Views: 52.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2019-01-29 16:01:42 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/search"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/urls" for 127.0.0.1 at 2019-01-29 16:02:24 +0530
+Processing by UrlsController#index as HTML
+  Rendering urls/index.html.erb within layouts/application
+  Rendered urls/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_shim.html.erb (0.8ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered layouts/_header.html.erb (2.4ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 91ms (Views: 88.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/urls" for 127.0.0.1 at 2019-01-29 16:02:25 +0530
+Processing by UrlsController#index as HTML
+  Rendering urls/index.html.erb within layouts/application
+  Rendered urls/index.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered layouts/_header.html.erb (2.4ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 65ms (Views: 62.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/urls/search" for 127.0.0.1 at 2019-01-29 16:02:27 +0530
+Processing by UrlsController#search as HTML
+  Rendering urls/search.html.erb within layouts/application
+  Rendered urls/search.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered layouts/_header.html.erb (2.1ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 98ms (Views: 94.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/urls/search" for 127.0.0.1 at 2019-01-29 16:02:30 +0530
+Processing by UrlsController#search as HTML
+  Rendering urls/search.html.erb within layouts/application
+  Rendered urls/search.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered layouts/_header.html.erb (2.1ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 72ms (Views: 67.0ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/urls/search_result" for 127.0.0.1 at 2019-01-29 16:02:33 +0530
+Processing by UrlsController#search_result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WaCRvy67TYf3nVi1qNRvEL3j9B1Rqp5L/vivgsVNSLU8VJaVNh/y0BnpdL7oCIsczFYbI5qlVmDeKjXbeDpQ3Q==", "url"=>{"keyword"=>"ruby"}, "commit"=>"Search"}
+  Rendering urls/search_result.html.erb within layouts/application
+  Rendered urls/search_result.html.erb within layouts/application (17.1ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered layouts/_header.html.erb (2.7ms)
+  Rendered layouts/_footer.html.erb (2.1ms)
+Completed 200 OK in 107ms (Views: 77.3ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/users/3" for 127.0.0.1 at 2019-01-29 16:02:38 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered layouts/_header.html.erb (2.6ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 55ms (Views: 50.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-29 16:02:40 +0530
+Processing by UsersController#index as HTML
+Redirected to http://localhost:3000/urls
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/urls" for 127.0.0.1 at 2019-01-29 16:02:40 +0530
+Processing by UrlsController#index as HTML
+  Rendering urls/index.html.erb within layouts/application
+  Rendered urls/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered layouts/_header.html.erb (2.9ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 59ms (Views: 55.4ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2019-01-29 16:02:47 +0530
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"oKM0sohA/+uHvbVCLU1AanUF1+QsSOLUcjgXi5B+8K+FNvrg26LFriZSRTxiy0PIUjq8FPcvMwufNwd4s2tvCg=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:39
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:39
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-29 16:02:47 +0530
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 58ms (Views: 53.8ms | ActiveRecord: 0.0ms)
+
+
