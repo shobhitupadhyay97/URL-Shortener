@@ -7,8 +7,6 @@ class HitcountWorker
     if url.count == nil
       url.update(count: 1)
     else
-    	  	puts 'Hellllllooooooooo'
-
       current_count = url.count 
       url.update(count: current_count + 1)
     end

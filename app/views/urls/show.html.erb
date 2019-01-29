@@ -1,3 +1,6 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 <div class="container">
 	<div class="row">
   	<div class="col-md-4">
@@ -19,8 +22,10 @@
       </div>
 		</div>
 	</div>
-  <a href="http://0.0.0.0:3000/urls/home" class="w3-button w3-indigo w3-border w3-hover-indigo"><h1>Try Again</h1></a>
-
+  <h2>
+  <a href="http://0.0.0.0:3000/urls/new" class="w3-button w3-black w3-border w3-hover-dark-grey">Get Short URL from Long URL</a>
+  <a href="http://0.0.0.0:3000/fetch_long_url" class="w3-button w3-black w3-border w3-hover-dark-grey">Get Long URL from Short URL</a>
+  </h2>
   <p> Today's total conversions
   <% @conversion = Conversion.find_by(date: Date.today) %> 
   <%= "#{@conversion.count}" %>

@@ -16998,3 +16998,994 @@ Completed 200 OK in 56ms (Views: 52.3ms | ActiveRecord: 1.1ms)
   ↳ app/workers/hitcount_worker.rb:6
   [1m[36mUrl Load (0.7ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
   ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (0.3ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (0.2ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (0.3ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (0.2ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (1.5ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (0.2ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (0.4ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (1.8ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (6.1ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (0.4ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (0.3ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (0.3ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (0.3ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (0.3ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (0.4ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (0.4ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (0.4ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (0.3ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (0.3ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (2.7ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (2.1ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (7.3ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (1.9ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (3.6ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (2.5ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (7.4ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (9.1ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (9.3ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (4.0ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (0.7ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (0.7ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (0.4ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (0.4ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+Started GET "/" for 127.0.0.1 at 2019-01-28 18:53:52 +0530
+Processing by UsersController#home as HTML
+Redirected to http://0.0.0.0:3000/urls/home
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/urls/home" for 127.0.0.1 at 2019-01-28 18:53:52 +0530
+Processing by UrlsController#home as HTML
+  Rendering urls/home.html.erb within layouts/application
+  Rendered urls/home.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered layouts/_header.html.erb (23.8ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 90ms (Views: 77.0ms | ActiveRecord: 8.9ms)
+
+
+  [1m[36mUrl Load (0.9ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (0.8ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (0.7ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (1.1ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (0.4ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (0.5ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (0.7ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (0.4ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (0.3ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (0.4ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (0.4ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (0.7ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (0.7ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (0.4ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (0.3ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (0.7ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (0.4ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (1.5ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (0.4ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (1.3ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (0.4ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (0.7ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (4.6ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (3.3ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (7.2ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (12.1ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  [1m[36mUrl Load (5.0ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (1.6ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (0.7ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (0.9ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (0.4ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (1.0ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (0.5ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (0.7ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (5.4ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (0.8ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (0.5ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (1.3ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (0.3ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (0.5ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (1.9ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (0.7ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (0.4ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (2.2ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  [1m[36mUrl Load (3.2ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  [1m[36mUrl Load (3.2ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (3.4ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  ↳ app/workers/hitcount_worker.rb:6
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (2.6ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (2.0ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (2.4ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (1.9ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  [1m[36mUrl Load (1.1ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  [1m[36mUrl Load (3.5ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  ↳ app/workers/hitcount_worker.rb:6
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (1.0ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (1.8ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (35.2ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (0.8ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (6.5ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (4.7ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (0.8ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (5.5ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  [1m[36mUrl Load (2.8ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (2.7ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (0.9ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (0.5ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (0.7ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (0.6ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (1.3ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (0.7ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (1.6ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (0.7ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (1.4ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (1.3ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (2.6ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (0.7ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (1.1ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (0.7ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (1.0ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (1.0ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (0.6ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (1.0ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (186.2ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (1.2ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUrl Load (4.3ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+Started GET "/urls/16" for 127.0.0.1 at 2019-01-29 10:54:41 +0530
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mUrl Load (0.5ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/urls_controller.rb:13
+  Rendering urls/show.html.erb within layouts/application
+  [1m[36mConversion Load (0.6ms)[0m  [1m[34mSELECT  "conversions".* FROM "conversions" WHERE "conversions"."date" = $1 LIMIT $2[0m  [["date", "2019-01-29"], ["LIMIT", 1]]
+  ↳ app/views/urls/show.html.erb:28
+  Rendered urls/show.html.erb within layouts/application (19.8ms)
+Completed 500 Internal Server Error in 143ms (ActiveRecord: 11.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `count' for nil:NilClass):
+    26: 
+    27:   <p> Today's total conversions
+    28:   <% @conversion = Conversion.find_by(date: Date.today) %> 
+    29:   <%= "#{@conversion.count}" %>
+    30:   </p>
+    31: </div>
+  
+app/views/urls/show.html.erb:29:in `_app_views_urls_show_html_erb__4458003719896877058_70172955283580'
+  [1m[36mConversion Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM "conversions" LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mConversion Load (0.4ms)[0m  [1m[34mSELECT "conversions".* FROM "conversions"[0m
+Started GET "/" for 127.0.0.1 at 2019-01-29 10:57:58 +0530
+Processing by UsersController#home as HTML
+Redirected to http://0.0.0.0:3000/urls/home
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/urls/home" for 127.0.0.1 at 2019-01-29 10:57:58 +0530
+Processing by UrlsController#home as HTML
+  Rendering urls/home.html.erb within layouts/application
+  Rendered urls/home.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered layouts/_header.html.erb (6.6ms)
+  Rendered layouts/_footer.html.erb (1.4ms)
+Completed 200 OK in 79ms (Views: 71.9ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/urls/new" for 127.0.0.1 at 2019-01-29 10:57:59 +0530
+Processing by UrlsController#new as HTML
+  Rendering urls/new.html.erb within layouts/application
+  Rendered shared/_error_msg.html.erb (0.7ms)
+  Rendered urls/new.html.erb within layouts/application (11.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered layouts/_header.html.erb (2.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 83ms (Views: 76.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/urls" for 127.0.0.1 at 2019-01-29 10:58:31 +0530
+Processing by UrlsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SA8xFlnC+fSpC5RCtZtw80KkfxVjqGfUqtsbevrVnWSk5Jdwygrj2mLhjiGFWcYMEQ+mx8xsDiM+SUg1CVRNkg==", "url"=>{"long_url"=>"www.google.com/search?q=what+is+web+injection+attack&oq=how+web+injec&aqs=chrome.2.69i57j0l2.8086j1j7&sourceid=chrome&ie=UTF-8", "domain"=>"google"}, "commit"=>"Create Short URL"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/urls_controller.rb:50
+  [1m[36mUrl Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "urls" WHERE LOWER("urls"."long_url") = LOWER($1) LIMIT $2[0m  [["long_url", "www.google.com/search?q=what+is+web+injection+attack&oq=how+web+injec&aqs=chrome.2.69i57j0l2.8086j1j7&sourceid=chrome&ie=UTF-8"], ["LIMIT", 1]]
+  ↳ app/controllers/urls_controller.rb:50
+  [1m[36mUrl Create (2.2ms)[0m  [1m[32mINSERT INTO "urls" ("long_url", "url_digest", "domain", "short_url", "created_at", "updated_at", "count") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["long_url", "www.google.com/search?q=what+is+web+injection+attack&oq=how+web+injec&aqs=chrome.2.69i57j0l2.8086j1j7&sourceid=chrome&ie=utf-8"], ["url_digest", "99bc56c02e6f179d5bcf6cc379083915"], ["domain", "google"], ["short_url", "99bc56"], ["created_at", "2019-01-29 05:28:31.393708"], ["updated_at", "2019-01-29 05:28:31.393708"], ["count", 0]]
+  ↳ app/controllers/urls_controller.rb:50
+  [1m[36mConversion Load (0.5ms)[0m  [1m[34mSELECT  "conversions".* FROM "conversions" WHERE "conversions"."date" = $1 LIMIT $2[0m  [["date", "2019-01-29"], ["LIMIT", 1]]
+  ↳ app/workers/counter_worker.rb:6
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/workers/counter_worker.rb:8
+  [1m[36mConversion Create (1.6ms)[0m  [1m[32mINSERT INTO "conversions" ("date", "count", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["date", "2019-01-29"], ["count", 1], ["created_at", "2019-01-29 05:28:31.469366"], ["updated_at", "2019-01-29 05:28:31.469366"]]
+  ↳ app/workers/counter_worker.rb:8
+  [1m[35m (21.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (81.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/workers/counter_worker.rb:8
+  ↳ app/controllers/urls_controller.rb:50
+Redirected to http://0.0.0.0:3000/urls/17
+Completed 302 Found in 269ms (ActiveRecord: 126.1ms)
+
+
+Started GET "/urls/17" for 127.0.0.1 at 2019-01-29 10:58:31 +0530
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mUrl Load (0.4ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/urls_controller.rb:13
+  Rendering urls/show.html.erb within layouts/application
+  [1m[36mConversion Load (0.4ms)[0m  [1m[34mSELECT  "conversions".* FROM "conversions" WHERE "conversions"."date" = $1 LIMIT $2[0m  [["date", "2019-01-29"], ["LIMIT", 1]]
+  ↳ app/views/urls/show.html.erb:26
+  Rendered urls/show.html.erb within layouts/application (7.3ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered layouts/_header.html.erb (2.3ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 65ms (Views: 59.9ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/urls/17" for 127.0.0.1 at 2019-01-29 10:59:32 +0530
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mUrl Load (0.5ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/urls_controller.rb:13
+  Rendering urls/show.html.erb within layouts/application
+  [1m[36mConversion Load (0.4ms)[0m  [1m[34mSELECT  "conversions".* FROM "conversions" WHERE "conversions"."date" = $1 LIMIT $2[0m  [["date", "2019-01-29"], ["LIMIT", 1]]
+  ↳ app/views/urls/show.html.erb:29
+  Rendered urls/show.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered layouts/_header.html.erb (2.1ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 75ms (Views: 68.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/urls/17" for 127.0.0.1 at 2019-01-29 11:00:57 +0530
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mUrl Load (0.4ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/urls_controller.rb:13
+  Rendering urls/show.html.erb within layouts/application
+  [1m[36mConversion Load (0.3ms)[0m  [1m[34mSELECT  "conversions".* FROM "conversions" WHERE "conversions"."date" = $1 LIMIT $2[0m  [["date", "2019-01-29"], ["LIMIT", 1]]
+  ↳ app/views/urls/show.html.erb:29
+  Rendered urls/show.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered layouts/_header.html.erb (2.1ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 63ms (Views: 58.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/urls/17" for 127.0.0.1 at 2019-01-29 11:01:01 +0530
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mUrl Load (0.5ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/urls_controller.rb:13
+  Rendering urls/show.html.erb within layouts/application
+  [1m[36mConversion Load (0.3ms)[0m  [1m[34mSELECT  "conversions".* FROM "conversions" WHERE "conversions"."date" = $1 LIMIT $2[0m  [["date", "2019-01-29"], ["LIMIT", 1]]
+  ↳ app/views/urls/show.html.erb:29
+  Rendered urls/show.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 61ms (Views: 54.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/urls/17" for 127.0.0.1 at 2019-01-29 11:01:06 +0530
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mUrl Load (0.4ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/urls_controller.rb:13
+  Rendering urls/show.html.erb within layouts/application
+  [1m[36mConversion Load (0.4ms)[0m  [1m[34mSELECT  "conversions".* FROM "conversions" WHERE "conversions"."date" = $1 LIMIT $2[0m  [["date", "2019-01-29"], ["LIMIT", 1]]
+  ↳ app/views/urls/show.html.erb:31
+  Rendered urls/show.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered layouts/_header.html.erb (3.5ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 68ms (Views: 60.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/urls/17" for 127.0.0.1 at 2019-01-29 11:01:21 +0530
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mUrl Load (0.6ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/urls_controller.rb:13
+  Rendering urls/show.html.erb within layouts/application
+  [1m[36mConversion Load (0.3ms)[0m  [1m[34mSELECT  "conversions".* FROM "conversions" WHERE "conversions"."date" = $1 LIMIT $2[0m  [["date", "2019-01-29"], ["LIMIT", 1]]
+  ↳ app/views/urls/show.html.erb:31
+  Rendered urls/show.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered layouts/_header.html.erb (2.5ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 62ms (Views: 57.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/urls/17" for 127.0.0.1 at 2019-01-29 11:01:32 +0530
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mUrl Load (0.3ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/urls_controller.rb:13
+  Rendering urls/show.html.erb within layouts/application
+  [1m[36mConversion Load (0.4ms)[0m  [1m[34mSELECT  "conversions".* FROM "conversions" WHERE "conversions"."date" = $1 LIMIT $2[0m  [["date", "2019-01-29"], ["LIMIT", 1]]
+  ↳ app/views/urls/show.html.erb:30
+  Rendered urls/show.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered layouts/_header.html.erb (3.8ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 65ms (Views: 61.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/urls/17" for 127.0.0.1 at 2019-01-29 11:01:46 +0530
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mUrl Load (0.5ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/urls_controller.rb:13
+  Rendering urls/show.html.erb within layouts/application
+  [1m[36mConversion Load (0.3ms)[0m  [1m[34mSELECT  "conversions".* FROM "conversions" WHERE "conversions"."date" = $1 LIMIT $2[0m  [["date", "2019-01-29"], ["LIMIT", 1]]
+  ↳ app/views/urls/show.html.erb:30
+  Rendered urls/show.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered layouts/_header.html.erb (2.1ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 66ms (Views: 60.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/urls/17" for 127.0.0.1 at 2019-01-29 11:02:01 +0530
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mUrl Load (0.3ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/urls_controller.rb:13
+  Rendering urls/show.html.erb within layouts/application
+  [1m[36mConversion Load (0.4ms)[0m  [1m[34mSELECT  "conversions".* FROM "conversions" WHERE "conversions"."date" = $1 LIMIT $2[0m  [["date", "2019-01-29"], ["LIMIT", 1]]
+  ↳ app/views/urls/show.html.erb:30
+  Rendered urls/show.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered layouts/_header.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 57ms (Views: 53.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/urls/search" for 127.0.0.1 at 2019-01-29 11:16:16 +0530
+Processing by UrlsController#search as HTML
+  Rendering urls/search.html.erb within layouts/application
+  Rendered urls/search.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered layouts/_header.html.erb (9.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 69ms (Views: 60.6ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/urls/17" for 127.0.0.1 at 2019-01-29 11:37:15 +0530
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"17"}
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 5.2ms)
+
+
+  
+ArgumentError (The provided regular expression is using multiline anchors (^ or $), which may present a security risk. Did you mean to use \A and \z, or forgot to add the :multiline => true option?):
+  
+app/models/url.rb:9:in `<class:Url>'
+app/models/url.rb:1:in `<main>'
+app/controllers/urls_controller.rb:13:in `show'
+Started GET "/urls/home" for 127.0.0.1 at 2019-01-29 11:37:28 +0530
+Processing by UrlsController#home as HTML
+  Rendering urls/home.html.erb within layouts/application
+  Rendered urls/home.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered layouts/_header.html.erb (24.8ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 106ms (Views: 98.0ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/fetch_long_url" for 127.0.0.1 at 2019-01-29 11:37:30 +0530
+Processing by UrlsController#fetch_long_url as HTML
+  Rendering urls/fetch_long_url.html.erb within layouts/application
+  Rendered urls/fetch_long_url.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered layouts/_header.html.erb (2.1ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 87ms (Views: 80.9ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/show_long_url" for 127.0.0.1 at 2019-01-29 11:37:35 +0530
+Processing by UrlsController#show_long_url as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Fw9QZrQRjOi6EmyHi9b03DKMegAa6zFbnhp2VHDwQMuSoj91m9nx3X0q5Mi40fGlgodS06WtQBG47/U/rkoJ2Q==", "url"=>{"short_url"=>"02f1ea"}, "commit"=>"Get Long URL"}
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (The provided regular expression is using multiline anchors (^ or $), which may present a security risk. Did you mean to use \A and \z, or forgot to add the :multiline => true option?):
+  
+app/models/url.rb:9:in `<class:Url>'
+app/models/url.rb:1:in `<main>'
+app/controllers/urls_controller.rb:21:in `block in show_long_url'
+app/controllers/urls_controller.rb:20:in `show_long_url'
+Started POST "/show_long_url" for 127.0.0.1 at 2019-01-29 11:38:29 +0530
+Processing by UrlsController#show_long_url as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+aIMR2Qlb0PFDsyb/sx56+N87HwmAs1Y4potfTgMtqwDxgrm7c7O3p9TC98zxkqQVHEICHCLcOthXaaC5mLnMQ==", "url"=>{"short_url"=>"02f1ea"}, "commit"=>"Get Long URL"}
+  [1m[36mUrl Load (0.8ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."short_url" = $1 ORDER BY "urls"."id" ASC LIMIT $2[0m  [["short_url", "02f1ea"], ["LIMIT", 1]]
+  ↳ app/controllers/urls_controller.rb:21
+Redirected to http://0.0.0.0:3000/urls/10
+Completed 302 Found in 29ms (ActiveRecord: 5.7ms)
+
+
+Started GET "/urls/10" for 127.0.0.1 at 2019-01-29 11:38:29 +0530
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mUrl Load (0.4ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/urls_controller.rb:13
+  Rendering urls/show.html.erb within layouts/application
+  [1m[36mConversion Load (0.5ms)[0m  [1m[34mSELECT  "conversions".* FROM "conversions" WHERE "conversions"."date" = $1 LIMIT $2[0m  [["date", "2019-01-29"], ["LIMIT", 1]]
+  ↳ app/views/urls/show.html.erb:30
+  Rendered urls/show.html.erb within layouts/application (11.2ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  [1m[36mUrl Load (0.8ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/workers/hitcount_worker.rb:11
+  Rendered layouts/_header.html.erb (18.1ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 96ms (Views: 83.5ms | ActiveRecord: 7.1ms)
+
+
+  [1m[36mUrl Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM "urls" WHERE LOWER("urls"."long_url") = LOWER($1) AND "urls"."id" != $2 LIMIT $3[0m  [["long_url", "railsapps.github.io/installrubyonrails-mac.html"], ["id", 10], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:11
+  [1m[35m (1.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/workers/hitcount_worker.rb:11
+Started GET "/urls/new" for 127.0.0.1 at 2019-01-29 11:40:19 +0530
+Processing by UrlsController#new as HTML
+  Rendering urls/new.html.erb within layouts/application
+  Rendered shared/_error_msg.html.erb (0.3ms)
+  Rendered urls/new.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered layouts/_header.html.erb (14.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 89ms (Views: 70.3ms | ActiveRecord: 6.8ms)
+
+
+Started POST "/urls" for 127.0.0.1 at 2019-01-29 11:40:30 +0530
+Processing by UrlsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jDHo70CvatlE2UV4qFamM+NFAcflw6hQq1pL4LL+RFlg2k6J02dw948zXxuYlBDMsO7YFUoHwac/yBivQX+Urw==", "url"=>{"long_url"=>"https://www.youtube.com/watch?v=XQH7yjW6dy8", "domain"=>"youtube"}, "commit"=>"Create Short URL"}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/urls_controller.rb:51
+  [1m[36mUrl Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "urls" WHERE LOWER("urls"."long_url") = LOWER($1) LIMIT $2[0m  [["long_url", "https://www.youtube.com/watch?v=XQH7yjW6dy8"], ["LIMIT", 1]]
+  ↳ app/controllers/urls_controller.rb:51
+  [1m[36mUrl Create (3.2ms)[0m  [1m[32mINSERT INTO "urls" ("long_url", "url_digest", "domain", "short_url", "created_at", "updated_at", "count") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["long_url", "https://www.youtube.com/watch?v=xqh7yjw6dy8"], ["url_digest", "ac0f6de57c16916d7850c46aeb4cfc14"], ["domain", "youtube"], ["short_url", "www.you.comac0f6d"], ["created_at", "2019-01-29 06:10:30.975489"], ["updated_at", "2019-01-29 06:10:30.975489"], ["count", 0]]
+  ↳ app/controllers/urls_controller.rb:51
+  [1m[35m (40.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/urls_controller.rb:51
+  [1m[36mConversion Load (0.9ms)[0m  [1m[34mSELECT  "conversions".* FROM "conversions" WHERE "conversions"."date" = $1 LIMIT $2[0m  [["date", "2019-01-29"], ["LIMIT", 1]]
+  ↳ app/workers/counter_worker.rb:6
+Redirected to http://0.0.0.0:3000/urls/18
+Completed 302 Found in 82ms (ActiveRecord: 46.2ms)
+
+
+Started GET "/urls/18" for 127.0.0.1 at 2019-01-29 11:40:31 +0530
+  [1m[36mCACHE Conversion Load (0.0ms)[0m  [1m[34mSELECT  "conversions".* FROM "conversions" WHERE "conversions"."date" = $1 LIMIT $2[0m  [["date", "2019-01-29"], ["LIMIT", 1]]
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"18"}
+  ↳ app/workers/counter_worker.rb:10
+  [1m[36mUrl Load (0.5ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/urls_controller.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/workers/counter_worker.rb:12
+  [1m[36mConversion Update (0.5ms)[0m  [1m[33mUPDATE "conversions" SET "count" = $1, "updated_at" = $2 WHERE "conversions"."id" = $3[0m  [["count", 2], ["updated_at", "2019-01-29 06:10:31.063900"], ["id", 2]]
+  ↳ app/workers/counter_worker.rb:12
+  Rendering urls/show.html.erb within layouts/application
+  [1m[36mConversion Load (0.3ms)[0m  [1m[34mSELECT  "conversions".* FROM "conversions" WHERE "conversions"."date" = $1 LIMIT $2[0m  [["date", "2019-01-29"], ["LIMIT", 1]]
+  ↳ app/views/urls/show.html.erb:30
+  Rendered urls/show.html.erb within layouts/application (10.5ms)
+  [1m[35m (40.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/workers/counter_worker.rb:12
+  Rendered layouts/_shim.html.erb (0.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered layouts/_header.html.erb (3.0ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 83ms (Views: 74.7ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/urls/new" for 127.0.0.1 at 2019-01-29 11:40:52 +0530
+Processing by UrlsController#new as HTML
+  Rendering urls/new.html.erb within layouts/application
+  Rendered shared/_error_msg.html.erb (0.4ms)
+  Rendered urls/new.html.erb within layouts/application (5.8ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered layouts/_header.html.erb (30.3ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 136ms (Views: 110.2ms | ActiveRecord: 8.1ms)
+
+
+Started POST "/urls" for 127.0.0.1 at 2019-01-29 11:41:02 +0530
+Processing by UrlsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vfsQ42qFSkejWhhHaAB6fqpe9f0rhQgVY1DNnF5VJFFRELaF+U1QaWiwAiRYwsyB+fUsL4RBYeL3wp7TrdT0pw==", "url"=>{"long_url"=>"https://ruby-doc.org/core-2.2.0/String.html", "domain"=>"ruby"}, "commit"=>"Create Short URL"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/urls_controller.rb:51
+  [1m[36mUrl Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "urls" WHERE LOWER("urls"."long_url") = LOWER($1) LIMIT $2[0m  [["long_url", "https://ruby-doc.org/core-2.2.0/String.html"], ["LIMIT", 1]]
+  ↳ app/controllers/urls_controller.rb:51
+  [1m[36mUrl Create (0.4ms)[0m  [1m[32mINSERT INTO "urls" ("long_url", "url_digest", "domain", "short_url", "created_at", "updated_at", "count") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["long_url", "https://ruby-doc.org/core-2.2.0/string.html"], ["url_digest", "02a348b04f3830855c53ba2a6d19e91a"], ["domain", "ruby"], ["short_url", "www.rub.com/02a348"], ["created_at", "2019-01-29 06:11:02.087870"], ["updated_at", "2019-01-29 06:11:02.087870"], ["count", 0]]
+  ↳ app/controllers/urls_controller.rb:51
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/urls_controller.rb:51
+Redirected to http://0.0.0.0:3000/urls/19
+Completed 302 Found in 53ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/urls/19" for 127.0.0.1 at 2019-01-29 11:41:02 +0530
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"19"}
+  [1m[36mUrl Load (0.6ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/urls_controller.rb:13
+  Rendering urls/show.html.erb within layouts/application
+  [1m[36mConversion Load (0.3ms)[0m  [1m[34mSELECT  "conversions".* FROM "conversions" WHERE "conversions"."date" = $1 LIMIT $2[0m  [["date", "2019-01-29"], ["LIMIT", 1]]
+  ↳ app/views/urls/show.html.erb:30
+  [1m[36mConversion Load (0.6ms)[0m  [1m[34mSELECT  "conversions".* FROM "conversions" WHERE "conversions"."date" = $1 LIMIT $2[0m  [["date", "2019-01-29"], ["LIMIT", 1]]
+  ↳ app/workers/counter_worker.rb:6
+  Rendered urls/show.html.erb within layouts/application (14.8ms)
+  [1m[36mCACHE Conversion Load (0.0ms)[0m  [1m[34mSELECT  "conversions".* FROM "conversions" WHERE "conversions"."date" = $1 LIMIT $2[0m  [["date", "2019-01-29"], ["LIMIT", 1]]
+  ↳ app/workers/counter_worker.rb:10
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/workers/counter_worker.rb:12
+  [1m[36mConversion Update (0.4ms)[0m  [1m[33mUPDATE "conversions" SET "count" = $1, "updated_at" = $2 WHERE "conversions"."id" = $3[0m  [["count", 3], ["updated_at", "2019-01-29 06:11:02.172565"], ["id", 2]]
+  ↳ app/workers/counter_worker.rb:12
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/workers/counter_worker.rb:12
+  Rendered layouts/_shim.html.erb (0.7ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered layouts/_header.html.erb (3.3ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 71ms (Views: 61.7ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/urls/new" for 127.0.0.1 at 2019-01-29 11:44:52 +0530
+Processing by UrlsController#new as HTML
+  Rendering urls/new.html.erb within layouts/application
+  Rendered shared/_error_msg.html.erb (0.5ms)
+  Rendered urls/new.html.erb within layouts/application (5.4ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered layouts/_header.html.erb (3.1ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 61ms (Views: 58.7ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/urls" for 127.0.0.1 at 2019-01-29 11:45:05 +0530
+Processing by UrlsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JeGXJkaXrpF6RlCKzN2Zg3zU4HMGK7kLknZ8sQt9G/nJCjFA1V+0v7GsSun8Hy98L385oanv0PwG5C/++PzLDw==", "url"=>{"long_url"=>"google.com/dkjamkfa/dfnamdnasm", "domain"=>"google"}, "commit"=>"Create Short URL"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/urls_controller.rb:51
+  [1m[36mUrl Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "urls" WHERE LOWER("urls"."long_url") = LOWER($1) LIMIT $2[0m  [["long_url", "google.com/dkjamkfa/dfnamdnasm"], ["LIMIT", 1]]
+  ↳ app/controllers/urls_controller.rb:51
+  [1m[35m (0.6ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/urls_controller.rb:51
+  Rendering urls/new.html.erb within layouts/application
+  Rendered shared/_error_msg.html.erb (1.2ms)
+  Rendered urls/new.html.erb within layouts/application (8.2ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered layouts/_header.html.erb (2.8ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 85ms (Views: 78.7ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/urls" for 127.0.0.1 at 2019-01-29 11:48:56 +0530
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for UrlsController):
+  
+actionpack (5.2.2) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.2) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.2) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.2) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.6) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.6) lib/rack/etag.rb:25:in `call'
+rack (2.0.6) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.6) lib/rack/head.rb:12:in `call'
+actionpack (5.2.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.6) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.6) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.2) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/urls" for 127.0.0.1 at 2019-01-29 11:49:00 +0530
+Processing by UrlsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ptxXWyz3pN6j48kV6yvhjm/4N29YWp7AQCH0aSUNwLNcuFH6pRwFQ/m+DlEmIdL12PXTGw7TI3PD5n+W+2ORLg==", "url"=>{"long_url"=>"google.com/dkjamkfa/dfnamdnasm", "domain"=>"google"}, "commit"=>"Create Short URL"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/urls_controller.rb:51
+  [1m[36mUrl Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "urls" WHERE LOWER("urls"."long_url") = LOWER($1) LIMIT $2[0m  [["long_url", "google.com/dkjamkfa/dfnamdnasm"], ["LIMIT", 1]]
+  ↳ app/controllers/urls_controller.rb:51
+  [1m[36mUrl Create (0.5ms)[0m  [1m[32mINSERT INTO "urls" ("long_url", "url_digest", "domain", "short_url", "created_at", "updated_at", "count") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["long_url", "google.com/dkjamkfa/dfnamdnasm"], ["url_digest", "4692e3f0fc70636f6ad01bde53eed01d"], ["domain", "google"], ["short_url", "www.goo.com/4692e3"], ["created_at", "2019-01-29 06:19:00.334764"], ["updated_at", "2019-01-29 06:19:00.334764"], ["count", 0]]
+  ↳ app/controllers/urls_controller.rb:51
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/urls_controller.rb:51
+Redirected to http://0.0.0.0:3000/urls/20
+Completed 302 Found in 53ms (ActiveRecord: 7.5ms)
+
+
+Started GET "/urls/20" for 127.0.0.1 at 2019-01-29 11:49:00 +0530
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mUrl Load (0.4ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/urls_controller.rb:13
+  Rendering urls/show.html.erb within layouts/application
+  [1m[36mConversion Load (0.5ms)[0m  [1m[34mSELECT  "conversions".* FROM "conversions" WHERE "conversions"."date" = $1 LIMIT $2[0m  [["date", "2019-01-29"], ["LIMIT", 1]]
+  ↳ app/views/urls/show.html.erb:30
+  Rendered urls/show.html.erb within layouts/application (12.3ms)
+  [1m[36mConversion Load (0.5ms)[0m  [1m[34mSELECT  "conversions".* FROM "conversions" WHERE "conversions"."date" = $1 LIMIT $2[0m  [["date", "2019-01-29"], ["LIMIT", 1]]
+  ↳ app/workers/counter_worker.rb:6
+  [1m[36mCACHE Conversion Load (0.0ms)[0m  [1m[34mSELECT  "conversions".* FROM "conversions" WHERE "conversions"."date" = $1 LIMIT $2[0m  [["date", "2019-01-29"], ["LIMIT", 1]]
+  ↳ app/workers/counter_worker.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/workers/counter_worker.rb:12
+  [1m[36mConversion Update (0.6ms)[0m  [1m[33mUPDATE "conversions" SET "count" = $1, "updated_at" = $2 WHERE "conversions"."id" = $3[0m  [["count", 4], ["updated_at", "2019-01-29 06:19:00.427978"], ["id", 2]]
+  ↳ app/workers/counter_worker.rb:12
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered layouts/_header.html.erb (17.1ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 95ms (Views: 83.2ms | ActiveRecord: 7.8ms)
+
+
+  [1m[35m (41.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/workers/counter_worker.rb:12
+Started GET "/users/1" for 127.0.0.1 at 2019-01-29 11:55:44 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered layouts/_header.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 50ms (Views: 40.6ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2019-01-29 11:55:47 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (31.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered layouts/_header.html.erb (3.2ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 90ms (Views: 54.1ms | ActiveRecord: 32.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-29 11:55:51 +0530
+Processing by UsersController#home as HTML
+Redirected to http://0.0.0.0:3000/urls/home
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/urls/home" for 127.0.0.1 at 2019-01-29 11:55:51 +0530
+Processing by UrlsController#home as HTML
+  Rendering urls/home.html.erb within layouts/application
+  Rendered urls/home.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered layouts/_header.html.erb (2.1ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 72ms (Views: 67.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/urls/home" for 127.0.0.1 at 2019-01-29 11:55:58 +0530
+Processing by UrlsController#home as HTML
+  Rendering urls/home.html.erb within layouts/application
+  Rendered urls/home.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered layouts/_header.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 79ms (Views: 73.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-29 11:56:00 +0530
+Processing by UsersController#home as HTML
+Redirected to http://0.0.0.0:3000/urls/home
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/urls/home" for 127.0.0.1 at 2019-01-29 11:56:00 +0530
+Processing by UrlsController#home as HTML
+  Rendering urls/home.html.erb within layouts/application
+  Rendered urls/home.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered layouts/_header.html.erb (2.1ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 69ms (Views: 65.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-29 11:57:24 +0530
+Processing by UsersController#home as HTML
+Redirected to http://0.0.0.0:3000/urls/home
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/urls/home" for 127.0.0.1 at 2019-01-29 11:57:24 +0530
+Processing by UrlsController#home as HTML
+  Rendering urls/home.html.erb within layouts/application
+  Rendered urls/home.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered layouts/_header.html.erb (2.1ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 86ms (Views: 82.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/urls/home" for 127.0.0.1 at 2019-01-29 11:57:51 +0530
+Processing by UrlsController#home as HTML
+  Rendering urls/home.html.erb within layouts/application
+  Rendered urls/home.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered layouts/_header.html.erb (2.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 55ms (Views: 52.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/fetch_long_url" for 127.0.0.1 at 2019-01-29 11:58:34 +0530
+Processing by UrlsController#fetch_long_url as HTML
+  Rendering urls/fetch_long_url.html.erb within layouts/application
+  Rendered urls/fetch_long_url.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered layouts/_header.html.erb (2.8ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 81ms (Views: 74.9ms | ActiveRecord: 0.8ms)
+
+
+  [1m[36mUrl Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "urls" LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUrl Load (0.4ms)[0m  [1m[34mSELECT "urls".* FROM "urls"[0m
+Started POST "/show_long_url" for 127.0.0.1 at 2019-01-29 11:59:21 +0530
+Processing by UrlsController#show_long_url as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XzitKEseRCA2jN89QYi8AOAikfr77Kf+LAOXJAgUD+/alcI7ZNY5FfG0V3Jyj7l5UCm5KUSq1rQK9hRP1q5G/Q==", "url"=>{"short_url"=>"www.goo.com/4692e3"}, "commit"=>"Get Long URL"}
+  [1m[36mUrl Load (1.1ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."short_url" = $1 ORDER BY "urls"."id" ASC LIMIT $2[0m  [["short_url", "www.goo.com/4692e3"], ["LIMIT", 1]]
+  ↳ app/controllers/urls_controller.rb:21
+Redirected to http://0.0.0.0:3000/urls/20
+Completed 302 Found in 22ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/urls/20" for 127.0.0.1 at 2019-01-29 11:59:21 +0530
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mUrl Load (1.0ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/urls_controller.rb:13
+  Rendering urls/show.html.erb within layouts/application
+  [1m[36mConversion Load (0.5ms)[0m  [1m[34mSELECT  "conversions".* FROM "conversions" WHERE "conversions"."date" = $1 LIMIT $2[0m  [["date", "2019-01-29"], ["LIMIT", 1]]
+  ↳ app/views/urls/show.html.erb:30
+  Rendered urls/show.html.erb within layouts/application (5.2ms)
+  [1m[36mUrl Load (0.5ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:6
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/workers/hitcount_worker.rb:11
+  [1m[36mUrl Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "urls" WHERE LOWER("urls"."long_url") = LOWER($1) AND "urls"."id" != $2 LIMIT $3[0m  [["long_url", "google.com/dkjamkfa/dfnamdnasm"], ["id", 20], ["LIMIT", 1]]
+  ↳ app/workers/hitcount_worker.rb:11
+  [1m[36mUrl Update (0.6ms)[0m  [1m[33mUPDATE "urls" SET "count" = $1, "updated_at" = $2 WHERE "urls"."id" = $3[0m  [["count", 1], ["updated_at", "2019-01-29 06:29:21.972627"], ["id", 20]]
+  ↳ app/workers/hitcount_worker.rb:11
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/workers/hitcount_worker.rb:11
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered layouts/_header.html.erb (4.8ms)
+  Rendered layouts/_footer.html.erb (1.6ms)
+Completed 200 OK in 93ms (Views: 82.0ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/urls/20" for 127.0.0.1 at 2019-01-29 11:59:26 +0530
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mUrl Load (0.4ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/urls_controller.rb:13
+  Rendering urls/show.html.erb within layouts/application
+  [1m[36mConversion Load (0.3ms)[0m  [1m[34mSELECT  "conversions".* FROM "conversions" WHERE "conversions"."date" = $1 LIMIT $2[0m  [["date", "2019-01-29"], ["LIMIT", 1]]
+  ↳ app/views/urls/show.html.erb:30
+  Rendered urls/show.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered layouts/_header.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 61ms (Views: 56.4ms | ActiveRecord: 1.0ms)
+
+

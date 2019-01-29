@@ -20,8 +20,6 @@ class UrlsController < ApplicationController
 		@url = Rails.cache.fetch(params[:url][:short_url], expires_in: 15.minutes) do 
 					Url.where(short_url: params[:url][:short_url]).first
     end
-    puts params
-    puts 'ysjfsakdbmnsdfbmasnbfdmnasbfmnsbdfmnsbmdfnbanmb'
     if @url != nil
       HitcountWorker.perform_async(@url.id)
 			redirect_to @url
@@ -44,8 +42,9 @@ class UrlsController < ApplicationController
 	def create
 		@url = Url.new(url_params)
 		require 'digest/md5'
+		short_domain = params[:url][:domain][0,3]
 		@url.url_digest = Digest::MD5.hexdigest(params[:url][:long_url])
-		@url.short_url = @url.url_digest[0,6]
+		@url.short_url = 'www.' + short_domain + '.com/' + @url.url_digest[0,6]
 		@url.count = 0
 		if @url.save
 			redirect_to @url
