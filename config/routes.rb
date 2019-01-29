@@ -12,7 +12,7 @@ Rails.application.routes.draw do
   post '/login',   to: 'sessions#create'
   delete '/logout',  to: 'sessions#destroy'
   get 'fetch_long_url', to: 'urls#fetch_long_url'
-  post 'show_long_url', to: 'urls#show_long_url'
+  get 'show_long_url', to: 'urls#show_long_url'
   get 'urls/search'
   post 'urls/search_result'
   get 'urls/report'
