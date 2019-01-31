@@ -1,0 +1,55 @@
+=begin
+ **Author:** Shobhit Upadhyay <br/>
+ **Common Name:** URL Shortener <br />
+ **Route :** /api/v0/get-seller-ads <br />
+ **Authentication Required:** yes <br />
+ ```
+ ** Request format
+ {
+    url:{
+      short_url:  "www.mk.com/e57ad6"
+    }
+  }
+
+  {
+    url:{
+      short_url:  "www.mk.com/e57ad6"
+    }
+  }
+ 
+ **Responset Format**
+ Success(status : 200)
+ {
+   upcoming: [ ],
+   live: [
+     {
+       agent_badge: "basic",
+       package_name: null,
+       products_name: [
+       "Resale Fixed Static Listing 1"
+       ],
+       start_datetime: 1525717800,
+       end_datetime: 1528396199,
+       slot_id: 45748,
+       polygons: [
+         {
+           name: "Thane West",
+           uuid: "f10e5c31366453883aed"
+         }
+       ],
+       profile_uuid : "60bd20c2-80d0-45ab-a328-3eb2dcb34d51"
+     },
+     {
+       agent_badge: "premium",
+       package_name: "Value Plus 1",
+       products_name: [ ],
+       start_datetime: 1524594600,
+       end_datetime: 1540405799,
+       slot_id: 45079,
+       polygons: [ ],
+       profile_uuid : "60bd20c2-80d0-45ab-a328-3eb2dcb34d51"
+     }
+   ],
+   expired: [ ]
+ }
+=end

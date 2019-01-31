@@ -3,12 +3,17 @@ class Url < ApplicationRecord
   include Elasticsearch::Model
   include Elasticsearch::Model::Callbacks
   index_name([Rails.env,base_class.to_s.pluralize.underscore].join('_'))
-  before_save { self.long_url = long_url.downcase }
+  
   VALID_LONG_URL_REGEX = /\A((http|https):\/\/)?[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,6}(:[0-9]{1,5})?(\/.*)?\Z/ix
-  validates :long_url, presence: true, length: { maximum: 255 }, format: { with: VALID_LONG_URL_REGEX }, 
-  uniqueness: { case_sensitive: false }
+  validates :long_url, presence: true, length: { maximum: 255 }, format: { with: VALID_LONG_URL_REGEX }
+  #uniqueness: { case_sensitive: false }
   validates :domain,  presence: true, length: { maximum: 25 }
+  validates :short_url,  presence: true, length: { maximum: 25 }
+
+  before_save { self.long_url = long_url.downcase }
+  
   after_create :start
+  
   settings index: {
     number_of_shards: 1,
     number_of_replicas: 0,
