@@ -1,13 +1,14 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
-
+gem 'rdoc', '~> 4.2', '>= 4.2.2'
 ruby '2.4.2'
 gem 'rb-readline'
 
 gem 'rails-controller-testing'
 gem 'elasticsearch-model', git: 'git://github.com/elastic/elasticsearch-rails.git', branch: 'master'
 gem 'elasticsearch-rails', git: 'git://github.com/elastic/elasticsearch-rails.git', branch: 'master'
-
+gem 'normalize_url'
+gem 'domainatrix'
 
 gem'sidekiq'
 gem 'sidekiq-cron'

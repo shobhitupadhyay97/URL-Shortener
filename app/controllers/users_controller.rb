@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
-  def home
+  def index
     if session[:user_id] != nil
-        redirect_to urls_home_path
+        redirect_to urls_path
     end
   end
 
@@ -9,7 +9,6 @@ class UsersController < ApplicationController
   	@user = User.find(params[:id])
   end
 
-  
   def new
   	@user = User.new
   end
@@ -19,7 +18,7 @@ class UsersController < ApplicationController
     if @user.save
       log_in @user
       flash[:success] = "Welcome to the My App!"
-      redirect_to urls_home_path
+      redirect_to urls_path
     else
       render 'new'
     end

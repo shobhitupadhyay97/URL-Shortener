@@ -3,8 +3,10 @@
 
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
-    <%= form_for(:url, url: show_long_url_path) do |f| %>
+    <%= form_for(:url, url: urls_search_result_path) do |f| %>
+    
       <%= f.label :keyword %>
+      <%= f.select :field, ['long_url', 'short_url']%>
       <%= f.text_field :keyword, class: 'form-control' %>
 
       <%= f.submit "Search", class: "btn btn-primary" %>
